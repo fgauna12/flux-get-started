@@ -4,9 +4,6 @@ kind: HelmRelease
 metadata:
   name: realworld-backend
   namespace: realworld
-  annotations:
-    fluxcd.io/automated: "true"
-    fluxcd.io/tag.chart-image: 20200229.8
 spec:
   releaseName: realworld-backend
   chart:
