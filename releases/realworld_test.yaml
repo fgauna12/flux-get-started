@@ -1,0 +1,19 @@
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: realworld-backend
+  namespace: realworld
+  annotations:
+    fluxcd.io/automated: "true"
+    fluxcd.io/tag.chart-image: 20200229.8
+spec:
+  releaseName: realworld-backend
+  chart:
+    repository: https://realworld.azurecr.io/helm/v1/repo
+    name: realworld-backend
+    version: 20200229.8
+  values:
+    image:
+      repository: bitnami/ghost
+      tag: 3.1.1-debian-9-r0
