@@ -7,7 +7,7 @@ metadata:
 spec:
   releaseName: realworld-backend
   chart:
-    repository: https://realworld.azurecr.io/helm/v1/repo
+    repository: https://realworld.azurecr.io/helm/v1/repo/
     name: realworld-backend
     version: 20200229.8
   values:
